@@ -14,7 +14,7 @@ def get_data(current_user_token):
 @api.route('/heroes', methods = ['POST'])
 @token_required
 def create_hero(current_user_token):
-    hero_name = request.['hero_name']
+    hero_name = request.json['hero_name']
     real_name = request.json['real_name']
     description = request.json['description']
     comics_appeared_in = request.json['comics_appeared_in']

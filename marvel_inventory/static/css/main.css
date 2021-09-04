@@ -95,8 +95,10 @@ ul#horizontal-list a:nth-last-child(1){
     background-image: linear-gradient(to top left, rgba(225, 231, 136, 0.7), rgba(6, 49, 9, 0.6)), url(../images/toppng.com-download-marvel-super-heroes-1153x1004.png);
     background-size: cover;
     background-position: 35% 50%;
-    -webkit-clip-path: inset(10%,10%,50%,10%) ;
-    clip-path: inset(10%,10%,50%,10%);
+    /* -webkit-clip-path: inset(25%,25%,50%,10%) ;
+    clip-path: inset(25%,25%,50%,10%); */
+    -webkit-clip-path: circle(50% at 50%, 50%);
+    clip-path: circle(50% at 50%, 50%);
     position: relative;
 }
 
