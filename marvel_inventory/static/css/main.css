@@ -1,0 +1,130 @@
+/* Nav Styles */
+.ct-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Target Main Logo Image */
+.ct-nav img{
+    width: 25%;
+    max-width: 100%;
+    margin-left: 2vw;
+}
+
+ul#horizontal-list{
+    min-width: 696px;
+    list-style: none;
+    padding-top: 20px;
+}
+
+ul#horizontal-list li, ul#horizontal-list a{
+    display: inline;
+    text-decoration: none;
+    padding: 0.5vw;
+    color: black;
+}
+
+ul#horizontal-list a:nth-last-child(1){
+    border: 2px solid blue;
+    border-radius: 11px;
+    margin-right: .2vw;
+}
+
+/* End of nav styles */
+
+/* Start of Header Section */
+#header-text{
+    padding: 2vw;
+}
+
+.header-image{
+    width: 82%;
+    max-width: 100%;
+}
+/* End of Header Section */
+
+/* Start of Middle Section Styles */
+#middle-text{
+    text-align: center;
+    padding: 13vh;
+}
+
+#middle-text h2{
+    padding:1.5vw;
+}
+/* End of Middle Section Styles */
+
+/* Start of Heroes Section Styles */
+#hero-image{
+    margin-bottom: 10vh;
+}
+
+#features-section{
+    margin: 8vw;
+}
+/* End of Heroes Section */
+
+/* Community Section Styles */
+#community-image{
+    width: 50%;
+    max-width: 75%;
+    margin-left: 3vw;
+}
+/* End of Community Section */
+
+/* Footer Section Styles */
+.footer-text-flex{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vh;
+}
+#footer-logo{
+    width:100%;
+    max-width:100%;
+}
+
+#footer{
+    border-top: 3px solid black;
+    margin-top: 20vh;
+}
+/* End of Footer Section */
+
+/* Profile Styles Section */
+.hero-section{
+    height: 95vh;
+    background-image: linear-gradient(to top left, rgba(225, 231, 136, 0.7), rgba(6, 49, 9, 0.6)), url(../images/toppng.com-download-marvel-super-heroes-1153x1004.png);
+    background-size: cover;
+    background-position: 35% 50%;
+    -webkit-clip-path: inset(10%,10%,50%,10%) ;
+    clip-path: inset(10%,10%,50%,10%);
+    position: relative;
+}
+
+.header-text{
+    display: flex;
+    justify-content: center;
+    padding-top: 20%;
+    left: 20rem;
+    top: 10rem;
+    color: white
+}
+
+/* animations */
+
+@keyframes flip{
+    0%{
+        width: inherit;
+    }
+    50%{
+        width: 0px;
+    }
+    100%{
+        height: inherit;
+    }
+}
+
+.card_flip::before{
+    animation-name: flip;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
