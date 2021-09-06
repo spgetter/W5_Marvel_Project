@@ -6,26 +6,75 @@
     <h3 class="header-text"> Welcome Lego Marvel Hero Card Collector! {{ current_user.email }} </h3>
 </header>
 
+<script>
+    function flip_anim1() 
+    {
+        document.getElementById('card_1').className = 'card_images';
+        document.getElementById('card_1_b').className = 'card_borders';
+        setTimeout(function() {
+            document.getElementById('card_1').className = 'card_image';
+            document.getElementById('card_1_b').className = 'card_border';
+        }, 920);
+    }
+    function flip_anim2() 
+    {
+        document.getElementById('card_2').className = 'card_images';
+        document.getElementById('card_2_b').className = 'card_borders';
+        setTimeout(function() {
+            document.getElementById('card_2').className = 'card_image';
+            document.getElementById('card_2_b').className = 'card_border';
+        }, 920);
+    }
+    function flip_anim3() 
+    {
+        document.getElementById('card_3').className = 'card_images';
+        document.getElementById('card_3_b').className = 'card_borders';
+        setTimeout(function() {
+            document.getElementById('card_3').className = 'card_image';
+            document.getElementById('card_3_b').className = 'card_border';
+        }, 920);
+    }
+</script>
+
+
+
+<div class="container">
+    <h3>Here are the cards you've collected so far:</h3>
+    <p>(click to flip the card for hero details)</p>
+    <div class="row">
+        <div class="col-0 col-md-1">
+            <button class="back_arrow"></button>
+        </div>
+        <div class="hero_card col-12 col-md-3">
+            <div class="card_border" id="card_1_b">
+                <img onclick="flip_anim1()" class="card_image" src="../../static/images/legos/lego_cpt_america.png" alt="Captain America Image" id="card_1">
+            </div>
+        </div>
+        <div class="hero_card col-12 col-md-3">
+            <div class="card_border" id="card_2_b">
+                <img onclick="flip_anim2()" class="card_image" src="../../static/images/legos/lego_spider_man.png" alt="Spider Man Image" id="card_2">
+            </div>
+        </div>
+        <div class="hero_card col-12 col-md-3">
+            <div class="card_border" id="card_3_b">
+                <img onclick="flip_anim3()" class="card_image" src="../../static/images/legos/lego_cpt_marvel.png" alt="Captain Marvel Image" id="card_3">
+            </div>
+        </div>
+        <div class="col-0 col-md-1">
+            <button class="forward_arrow"></button>
+        </div>
+    </div>
+    <div class="image_credit">
+        <a href="https://www.freepnglogos.com/pics/lego">Lego pics from freepnglogos.com</a>
+    </div>
+</div>
+
 <div class="container">
     <h3>Your profile details:</h3>
     <ul class="list-group">
         <li class="list-group-item"> Email: {{ current_user.email }} </li>
         <li class="list-group-item"> Token: {{ current_user.token }} </li>
     </ul>
-</div>
-
-<div class="container">
-    <h3>Here are the cards you've collected so far:</h3>
-    <p>(click to flip the card for hero details)</p>
-    <div class="hero_card">
-        Hero: {{ current_user.token }}
-    </div>
-    <div class="hero_card">
-        Hero: {{ current_user.token }}
-    </div>
-    <div class="hero_card">
-        Hero: {{ current_user.token }}
-    </div>
 </div>
 
 {% endblock content %}
