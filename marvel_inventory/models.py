@@ -76,7 +76,7 @@ class Hero(db.Model):
     user_token = db.Column(db.String, db.ForeignKey('user.token'), nullable = False)
 
     def __init__(self,hero_name,real_name,description,comics_appeared_in,super_power,user_token,id=0):
-        self.id = self.set_id()
+        self.id = self.id
         self.hero_name = hero_name
         self.real_name = real_name
         self.description = description

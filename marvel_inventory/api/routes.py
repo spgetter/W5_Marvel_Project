@@ -54,7 +54,8 @@ def get_hero(current_user_token, id):
 @token_required
 def update_hero(current_user_token, id):
     hero = Hero.query.get(id) # Get Hreo Instance
-    hero.name = request.json['name']
+    hero.hero_name = request.json['hero_name']
+    hero.real_name = request.json['real_name']
     hero.description = request.json['description']
     hero.comics_appeared_in = request.json['comics_appeared_in']
     hero.super_power = request.json['super_power']
