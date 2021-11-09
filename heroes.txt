@@ -1,0 +1,29 @@
+{
+	"hero_name": "Captain America",
+	"real_name": "Steven Rogers",
+	"description": "Cap is loyal to no politician or government and instead upholds the 'timeless principles of freedom, equality and justice of the American Dream'.",
+	"comics_appeared_in": 9944,
+	"super_power": "Super-Soldier Serum"	
+}
+{
+	"hero_name": "Captain Marvel",
+	"real_name": "Carol Danvers",
+	"description": "Accidentally subjected to the Psyche-Magnitron and mutated on a genetic level, she became a Human/Kree Hybrid superhuman warrior.",
+	"comics_appeared_in": 3585,
+	"super_power": "Binary Superhuman Powers"	
+}
+{
+	"hero_name": "Spider Man",
+	"real_name": "Peter Parker",
+	"description": "Orphaned as a toddler, he had to live with his Uncle Ben and Aunt May. During a science exhibition, he was bitten by a Radioactive Spider, granting him his powers.",
+	"comics_appeared_in": 14374,
+	"super_power": "Spider Physiology"	
+}
+{
+	"hero_name": "Iron Man",
+	"real_name": "Tony Stark",
+	"description": "A genius inventor and billionaire industrialist, who suits up in his armor of cutting-edge technology to become the super hero Iron Man.",
+	"comics_appeared_in": 9557,
+	"super_power": "Super-Genius Intelligence"	
+}
+
